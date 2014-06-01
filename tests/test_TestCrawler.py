@@ -10,7 +10,7 @@ class TestCrawler(unittest.TestCase):
         self.c = Crawler(self.START_URL, self.BRANCHING_FACTOR)
 
     def test_checkUrl(self):
-        ans = self.c.checkUrl(self.START_URL, [])
+        ans = self.c.getUrl(self.START_URL, [])
         #print ans
         self.assertTrue(len(ans) > 0)
 

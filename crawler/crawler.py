@@ -13,7 +13,7 @@ class Crawler():
         self.url = url
         self.branchingFactor = branchingFactor
 
-    def checkUrl(self, currUrl, foundUrl):
+    def getUrl(self, currUrl, foundUrl):
         """
         Checks the urls in the link currUrl and returns those found urls.
         """

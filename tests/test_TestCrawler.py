@@ -6,10 +6,10 @@ from crawler.crawlerDFS import Crawler
 class TestCrawler(unittest.TestCase):
     def setUp(self):
         self.START_URL = 'http://www.facebook.com/'
-        self.BRANCHING_FACTOR = 10
+        self.BRANCHING_FACTOR = 1
         self.c = Crawler(self.START_URL, self.BRANCHING_FACTOR)
 
-    def test_checkUrl(self):
+    def test_getUrl(self):
         ans = self.c.getUrl(self.START_URL, [])
         #print ans
         self.assertTrue(len(ans) > 0)

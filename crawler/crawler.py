@@ -13,7 +13,7 @@ class Crawler():
         self.url = url
         self.branchingFactor = branchingFactor
 
-    def checkUrl(self, currUrl, foundUrl):
+    def getUrl(self, currUrl, foundUrl):
         """
         Checks the urls in the link currUrl and returns those found urls.
         """
@@ -49,7 +49,7 @@ class Crawler():
         while count < self.branchingFactor and stack:
             currentUrl = stack.pop()
             print 'Checking page[%s]: %s' %(count + 1, currentUrl)
-            foundUrls = self.checkUrl(currentUrl, foundUrl)
+            foundUrls = self.getUrl(currentUrl, foundUrl)
             print '[%s] links found in %s' %(len(foundUrls), currentUrl)
             for i in foundUrls:
                 stack.append(i)
@@ -68,7 +68,7 @@ class Crawler():
         while count < self.branchingFactor and queue:
             currentUrl = queue.pop(0)
             print 'Checking page[%s]: %s' %(count + 1, currentUrl)
-            foundUrls = self.checkUrl(currentUrl, foundUrl)
+            foundUrls = self.getUrl(currentUrl, foundUrl)
             print '[%s] links found in %s' %(len(foundUrls), currentUrl)
             for i in foundUrls:
                 queue.append(i)

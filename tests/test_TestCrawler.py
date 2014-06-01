@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 
 import unittest
-from ds.crawlerDFS import Crawler
+from crawler.crawlerDFS import Crawler
 
 class TestCrawler(unittest.TestCase):
     def setUp(self):

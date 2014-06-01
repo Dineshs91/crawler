@@ -1,0 +1,10 @@
+crawlerDFS
+
+Requirements: 
+
+	python 2.7
+	BeautifulSoup
+	
+Install BeautifulSoup:
+	easy_install BeautifulSoup
+	pip install BeautifulSoup

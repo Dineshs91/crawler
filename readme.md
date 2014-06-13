@@ -11,7 +11,7 @@ The crawler provides with two options for searching the Subdirectories.
 You also have to specify the branching factor.Branching Factor specifies the depth you want to crawl ,i.e if there are a number of subdirectories at what level should the crawler stop indexing.
 
 You can use the check_env.py to see whether all dependancies are satisfied.
-Install the dependancies in requirements.txt or use pip install -r requirements.txt
+Install the dependancies in requirements.txt manually or use the following: pip install -r requirements.txt
 
 Usage: 
 

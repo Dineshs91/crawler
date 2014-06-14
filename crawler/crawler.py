@@ -14,7 +14,7 @@ class Crawler():
         self.url = url
         self.branchingFactor = branchingFactor
 
-    def getUrl(self, currUrl, foundUrl):
+    def get_url(self, currUrl, foundUrl):
         """
         Checks the urls in the link currUrl and returns those found urls.
         """
@@ -39,7 +39,7 @@ class Crawler():
         return urls
         
     @calc_time
-    def startDFS(self):
+    def start_dfs(self):
         """
         Crawls to find the links in the given link and the depth is determined
         by the branching factor. DFS algorithm is used.
@@ -51,7 +51,7 @@ class Crawler():
         while count < self.branchingFactor and stack:
             currentUrl = stack.pop()
             print 'Checking page[%s]: %s' %(count + 1, currentUrl)
-            foundUrls = self.getUrl(currentUrl, foundUrl)
+            foundUrls = self.get_url(currentUrl, foundUrl)
             print '[%s] links found in %s' %(len(foundUrls), currentUrl)
             for i in foundUrls:
                 stack.append(i)
@@ -60,7 +60,7 @@ class Crawler():
         return foundUrl
         
     @calc_time
-    def startBFS(self):
+    def start_bfs(self):
         """
         Uses BFS search technique.
         """
@@ -71,7 +71,7 @@ class Crawler():
         while count < self.branchingFactor and queue:
             currentUrl = queue.pop(0)
             print 'Checking page[%s]: %s' %(count + 1, currentUrl)
-            foundUrls = self.getUrl(currentUrl, foundUrl)
+            foundUrls = self.get_url(currentUrl, foundUrl)
             print '[%s] links found in %s' %(len(foundUrls), currentUrl)
             for i in foundUrls:
                 queue.append(i)

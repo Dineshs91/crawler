@@ -26,16 +26,18 @@ This command will run all the tests that are present inside tests directory.
 Hacking:
 
 Open interactive python from the main directory.
-$ python
 
->>> from crawler.crawler import Crawler
+    $ python
+    >>> from crawler.crawler import Crawler
 
 Create your crawler
->>> my_crawl = Crawler('http://www.test.com', 10)
+
+    >>> my_crawl = Crawler('http://www.test.com', 10)
 The first argument is the link and the second is the branching factor.
 
 Run your crawler
->>>my_crawl.startDFS()
+
+     >>>my_crawl.startDFS()
 
 The output is a set containing all the url's found while crawling.
 

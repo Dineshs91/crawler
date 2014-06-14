@@ -3,6 +3,7 @@
 import urllib2
 import re
 from BeautifulSoup import BeautifulSoup 
+from util.calc import calc_time
 
 class Crawler():
     """
@@ -37,6 +38,7 @@ class Crawler():
                 print 'Error ---> ', e
         return urls
         
+    @calc_time
     def startDFS(self):
         """
         Crawls to find the links in the given link and the depth is determined
@@ -57,6 +59,7 @@ class Crawler():
             count += 1
         return foundUrl
         
+    @calc_time
     def startBFS(self):
         """
         Uses BFS search technique.

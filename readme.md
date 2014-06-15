@@ -13,6 +13,13 @@ You also have to specify the branching factor.Branching Factor specifies the dep
 You can use the check_dependencies.py to see whether all dependancies are satisfied.
 Install the dependancies in requirements.txt manually or use the following: pip install -r requirements.txt
 
+To check dependencies, run the following command.
+
+    $ python check_dependencies.py
+
+This is a new concept that I am introducing. Execute this file and know which versions you have and which are
+needed.
+
 Usage: 
 
 Testing:

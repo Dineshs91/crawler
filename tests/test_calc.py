@@ -1,6 +1,6 @@
 #! /usr/bin/env python
 
-from util.calc import calc_time
+from crawler.util.calc import calc_time
 from time import sleep
 import unittest
 

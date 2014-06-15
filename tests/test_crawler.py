@@ -6,7 +6,7 @@ from crawler.crawler import Crawler
 class TestCrawler(unittest.TestCase):
     def setUp(self):
         self.START_URL = 'http://www.facebook.com/'
-        self.BRANCHING_FACTOR = 1
+        self.BRANCHING_FACTOR = 3
         self.c = Crawler(self.START_URL, self.BRANCHING_FACTOR)
 
     def test_get_url(self):

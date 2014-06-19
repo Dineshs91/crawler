@@ -51,6 +51,8 @@ or
 
 The output is a set containing all the url's found while crawling.
 
+Continuous Integration (Travis CI) is used by this project.
+
 Disclaimer:
 This project is for development purposes only. We are not responsible for any damage caused by
 using this project.

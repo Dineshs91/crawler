@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/Dineshs91/crawler.svg?branch=test)](https://travis-ci.org/Dineshs91/crawler)
 Crawler:
 
 Web Crawler browses the Website address specified and creates an index of all directories and subdirectories present.

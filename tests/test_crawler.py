@@ -6,22 +6,22 @@ from crawler.crawler import Crawler
 class TestCrawler(unittest.TestCase):
     def setUp(self):
         self.START_URL = 'http://www.facebook.com/'
-        self.BRANCHING_FACTOR = 1
+        self.BRANCHING_FACTOR = 3
         self.c = Crawler(self.START_URL, self.BRANCHING_FACTOR)
 
-    def test_getUrl(self):
-        ans = self.c.getUrl(self.START_URL, [])
+    def test_get_url(self):
+        ans = self.c.get_url(self.START_URL, [])
         #print ans
         self.assertTrue(len(ans) > 0)
 
-    def test_startDFS(self):
-        ans = self.c.startDFS()
+    def test_start_dfs(self):
+        ans = self.c.start_dfs()
         #print ans
         self.assertTrue(len(ans) > 0)
         #print 'No of links', len(ans)
         
-    def test_startBFS(self):
-        ans = self.c.startBFS()
+    def test_start_bfs(self):
+        ans = self.c.start_bfs()
         #print ans
         self.assertTrue(len(ans) > 0)
         #print 'No of links', len(ans)       

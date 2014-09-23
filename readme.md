@@ -44,10 +44,10 @@ The first argument is the link and the second is the branching factor.
 
 Run your crawler
 
-     >>>my_crawl.start_dfs()
+     >>> my_crawl.start_dfs()
 or
 
-     >>>my_crawl.start_bfs()
+     >>> my_crawl.start_bfs()
 
 The output is a set containing all the url's found while crawling.
 

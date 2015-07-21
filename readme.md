@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/Dineshs91/crawler.svg?branch=test)](https://travis-ci.org/Dineshs91/crawler)
 
-Crawler browses the Website address specified and creates an index of all directories and subdirectories present.
+**Crawler** browses the Website address specified and creates an index of all directories and subdirectories present.
 Usage Specify the Web Address.
 
 The crawler provides with two options for searching the Subdirectories.
@@ -20,9 +20,7 @@ To check dependencies, run the following command.
 This is a new concept that I am introducing. Execute this file and know which versions you have and which are
 needed.
 
-Usage: 
-
-Testing:
+###Testing:
 
 From the parent directory execute the following command.
 
@@ -30,7 +28,7 @@ From the parent directory execute the following command.
 
 This command will run all the tests that are present inside tests directory.
 
-Hacking:
+###Hacking:
 
 Open interactive python from the main directory.
 
@@ -53,6 +51,6 @@ The output is a set containing all the url's found while crawling.
 
 Continuous Integration (Travis CI) is used by this project.
 
-Disclaimer:
+####Disclaimer:
 This project is for development purposes only. We are not responsible for any damage caused by
 using this project.
